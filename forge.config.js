@@ -12,7 +12,7 @@ module.exports = {
       config: {
         repository: {
           owner: "sakshimistryagile",
-          name: "electron-demo",
+          name: "my-electron-app",
         },
         prerelease: false,
         draft: true,

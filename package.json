@@ -35,10 +35,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sakshimistryagile/electron-demo.git"
+    "url": "git+https://github.com/sakshimistryagile/my-electron-app.git"
   },
   "bugs": {
-    "url": "https://github.com/sakshimistryagile/electron-demo/issues"
+    "url": "https://github.com/sakshimistryagile/my-electron-app/issues"
   },
-  "homepage": "https://github.com/sakshimistryagile/electron-demo#readme"
+  "homepage": "https://github.com/sakshimistryagile/my-electron-app#readme"
 }
