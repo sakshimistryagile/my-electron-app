@@ -1,0 +1,44 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "build": "node build-electron.js",
+    "dist": "electron-builder --publish never",
+    "publish": "electron-forge publish",
+    "lint": "prettier --check '**/*.js'",
+    "prettier": "prettier --write '**/*.js'",
+    "build:ubuntu": "npx @electron/packager . agile-desktime --protocol=ad --protocol-name=\"ad\" --platform=linux --icon=assets/linux/Icon.png --arch=x64 --overwrite --out ubuntu/ && electron-installer-debian --src ubuntu/agile-desktime-linux-x64/ --dest builds/ --arch amd64 --icon assets/linux/Icon.png"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.7.0",
+    "@electron-forge/maker-deb": "^7.7.0",
+    "@electron-forge/maker-rpm": "^7.7.0",
+    "@electron-forge/maker-squirrel": "^7.7.0",
+    "@electron-forge/maker-zip": "^7.7.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.7.0",
+    "@electron-forge/plugin-fuses": "^7.7.0",
+    "@electron-forge/publisher-github": "^7.7.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^35.0.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "prettier": "^3.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakshimistryagile/electron-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sakshimistryagile/electron-demo/issues"
+  },
+  "homepage": "https://github.com/sakshimistryagile/electron-demo#readme"
+}
