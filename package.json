@@ -13,6 +13,7 @@
     "publish": "electron-forge publish",
     "lint": "prettier --check '**/*.js'",
     "prettier": "prettier --write '**/*.js'",
+    "deploy": "electron-builder build --mac --win --publish always",
     "build:ubuntu": "npx @electron/packager . agile-desktime --protocol=ad --protocol-name=\"ad\" --platform=linux --icon=assets/linux/Icon.png --arch=x64 --overwrite --out ubuntu/ && electron-installer-debian --src ubuntu/agile-desktime-linux-x64/ --dest builds/ --arch amd64 --icon assets/linux/Icon.png"
   },
   "author": "",
@@ -31,11 +32,13 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
-    "prettier": "^3.5.3"
+    "electron-updater": "^6.3.9",
+    "prettier": "^3.5.3",
+    "update-electron-app": "^3.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sakshimistryagile/my-electron-app.git"
+    "url": "https://github.com/sakshimistryagile/my-electron-app.git"
   },
   "bugs": {
     "url": "https://github.com/sakshimistryagile/my-electron-app/issues"
